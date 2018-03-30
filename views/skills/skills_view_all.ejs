@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Skills - View All</title>
+</head>
+<body>
+<h1>Skills</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <% for(var i = 0; i < skills.length; i++) %>
+    <tr>
+        <td><%= skills[i].skills_id %></td>
+        <td><%= skills[i].skills_name %></td>
+    </tr>
+    <% } %>
+</table>
+
+</body>
+</html>

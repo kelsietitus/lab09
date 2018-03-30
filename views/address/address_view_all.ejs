@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Address - View All</title>
+</head>
+<body>
+<h1>Addresses</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <% for(var i = 0; i < addresses.length; i++) %>
+    <tr>
+        <td><%= addresses[i].address_id %></td>
+        <td><%= addresses[i].address_name %></td>
+    </tr>
+    <% } %>
+</table>
+
+</body>
+</html>
